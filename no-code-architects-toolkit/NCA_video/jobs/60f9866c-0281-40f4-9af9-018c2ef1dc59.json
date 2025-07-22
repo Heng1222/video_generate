@@ -1,0 +1,21 @@
+{
+  "job_status": "done",
+  "job_id": "60f9866c-0281-40f4-9af9-018c2ef1dc59",
+  "queue_id": 139792413220048,
+  "process_id": 9,
+  "response": {
+    "endpoint": "/v1/video/concatenate",
+    "code": 500,
+    "id": "merge-request",
+    "job_id": "60f9866c-0281-40f4-9af9-018c2ef1dc59",
+    "response": null,
+    "message": "No cloud storage settings provided.",
+    "pid": 9,
+    "queue_id": 139792413220048,
+    "run_time": 6.019,
+    "queue_time": 0.005,
+    "total_time": 6.024,
+    "queue_length": 0,
+    "build_number": 200
+  }
+}

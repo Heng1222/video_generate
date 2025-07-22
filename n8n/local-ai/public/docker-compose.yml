@@ -29,19 +29,18 @@ services:
       - DB_POSTGRESDB_DATABASE=${POSTGRES_DB:-n8n}
       - DB_POSTGRESDB_USER=${POSTGRES_USER:-n8n}
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD:-change_this_password}
-
       # Authentication
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}
       - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-change_this_password}
       - N8N_RUNNERS_ENABLED=true
       - N8N_SECURE_COOKIE=${N8N_SECURE_COOKIE:-false}
-
+      - N8N_PAYLOAD_SIZE_MAX=100
       # Host configuration
       - N8N_HOST=${N8N_HOST:-localhost}
       - N8N_PORT=${N8N_PORT:-5678}
       - WEBHOOK_URL=${NGROK_PUBLIC_URL:-http://localhost:5678}
-
+      - N8N_DEFAULT_BINARY_DATA_MODE=${N8N_DEFAULT_BINARY_DATA_MODE:-false}
       # Execution settings
       - GENERIC_TIMEZONE=Asia/Taipei
       - TZ=Asia/Taipei
@@ -50,6 +49,7 @@ services:
       - postgres
     volumes:
       - n8n_data:/home/node/.n8n
+      - ../../../no-code-architects-toolkit/NCA_video:/home/tmp/NCA_video
     networks:
       - n8n_network
 
@@ -60,7 +60,8 @@ services:
       - 4040:4040
     command:
       - "http"
-      - "http://host.docker.internal:5678"
+      - "--domain=mrpunkun.ngrok.io"  # 固定 domain
+      - "host.docker.internal:5678"
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
     networks:
