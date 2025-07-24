@@ -3,6 +3,7 @@ n8n/local-ai/public/.env
 /baserow/.env
 /no-code-architects-toolkit/.env
 /no-code-architects-toolkit/tmp/
+/kling_authentication/.env
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
