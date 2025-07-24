@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import time
 import jwt
 import os
+from dotenv import load_dotenv
 
 # 載入 .env 檔案
 load_dotenv()
