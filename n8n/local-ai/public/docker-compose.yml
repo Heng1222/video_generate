@@ -34,7 +34,9 @@ services:
       - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}
       - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-change_this_password}
       - N8N_RUNNERS_ENABLED=true
+      # IPs connection
       - N8N_SECURE_COOKIE=${N8N_SECURE_COOKIE:-false}
+      # package max size
       - N8N_PAYLOAD_SIZE_MAX=100
       # Host configuration
       - N8N_HOST=${N8N_HOST:-localhost}
@@ -49,6 +51,7 @@ services:
       - postgres
     volumes:
       - n8n_data:/home/node/.n8n
+      #  shared space with NCA, get output videos easier
       - ../../../no-code-architects-toolkit/NCA_video:/home/tmp/NCA_video
     networks:
       - n8n_network
@@ -60,7 +63,7 @@ services:
       - 4040:4040
     command:
       - "http"
-      - "--domain=mrpunkun.ngrok.io"  # 固定 domain
+      - "--domain=mrpunkun.ngrok.io"  # fixed domain
       - "host.docker.internal:5678"
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
