@@ -14,5 +14,3 @@ COPY .env .
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 
-# docker run
-# docker run -d -p 12345:8000 --name auth-api fastapi-auth
