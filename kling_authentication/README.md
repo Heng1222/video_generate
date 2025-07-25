@@ -1,4 +1,4 @@
-# Kling offical API token generator
+# Kling official API token generator
 - 官方API需要透過 access key 和 secret key 生成API token並帶入才能使用API
 
 ## 使用方法

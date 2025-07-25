@@ -3,7 +3,7 @@
 - baserow(資料庫) 本地部屬
 - no-code-architects-toolkit(影片剪輯API) 本地部屬
 - LLM、video model使用API連線，於n8n中設定
-- (optional) Kling offical API 需要JWT加密產生API token，kling_authentication 本地部屬內部API產生
+- (optional) Kling official API 需要JWT加密產生API token，kling_authentication 本地部屬內部API產生
 
 ## n8n
  - 使用 n8n/local-ai/public/docker-compose.yml部署
