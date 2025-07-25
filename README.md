@@ -30,4 +30,7 @@
 
 TODO:
 - [ ] .env.example
-- [ ] 工作流整理&命名&備份
+- [ ] fb ig 同步上傳
+- [ ] 工作流備份
+- [ ] ffmpeg剪輯
+- [ ] PiAPI 切換
