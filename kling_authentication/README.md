@@ -8,27 +8,27 @@
 2. 啟動docker
 - 依序執行以下指令
 
-''' bash
+```bash
 # Docker部屬 
 docker build -t fastapi-auth .
 # 執行容器 port轉接12345:8000
 docker run -d -p 12345:8000 --name auth-api fastapi-auth
 docker start auth-api
-'''
+```
 
 3. API使用
 - API位置
-'''bash
+```bash
 POST http
 http://domain:12345/authentication
-'''
+```
 - json body
-'''bash
+```bash
 {
     "number":3600,
 }
-'''
+```
 - text return
-'''bash
+```bash
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBYWhEWU05eTl0R3BiWTRScm5LUVJCOUhlNEFrZk04ZSIsImV4cCI6MTc1MzM3Mzc1NSwibmJmIjoxNzUzMzcwMTU1fQ.fYeBddfeo__B4-12aP7FiMEWpfJFGCYkkFG_444dHbk
-'''
+```
