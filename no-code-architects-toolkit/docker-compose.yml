@@ -4,11 +4,14 @@ services:
     env_file:
       - .env
     ports:
+    # API 要打的 port(5050)
       - "5050:8080"
     volumes:
       - storage:/var/www/html/storage/app
       - logs:/var/www/html/storage/logs
+      #  routes有多一隻API所以需要手動掛載本地版本
       - ./routes:/app/routes
+      # output space of video needed to be shared with n8n container
       - ./NCA_video:/tmp
     restart: unless-stopped
     environment:
