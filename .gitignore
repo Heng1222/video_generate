@@ -4,6 +4,7 @@ n8n/local-ai/public/.env
 /no-code-architects-toolkit/.env
 /no-code-architects-toolkit/NCA_video/
 /kling_authentication/.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
