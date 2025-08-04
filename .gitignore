@@ -1,5 +1,5 @@
-n8n/local-ai/basic/.env
-n8n/local-ai/public/.env
+n8n/basic/.env
+n8n/public/.env
 /baserow/.env
 /no-code-architects-toolkit/.env
 /no-code-architects-toolkit/NCA_video/
