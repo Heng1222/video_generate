@@ -84,8 +84,6 @@ cd video_generate
 | Kling API token      | 12345      | 8000      | X      |
 
 TODO:
-- [ ] .env.example
 - [ ] fb ig 同步上傳
 - [ ] 工作流備份
-- [ ] ffmpeg剪輯
-- [ ] PiAPI 切換
+
