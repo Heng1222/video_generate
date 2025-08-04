@@ -1,4 +1,4 @@
-# 使用說明
+# 自動化AI影片生成 環境
 - n8n(自動化流程) 本地部屬
 - baserow(資料庫) 本地部屬
 - no-code-architects-toolkit(影片剪輯API) 本地部屬
