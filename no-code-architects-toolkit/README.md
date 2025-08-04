@@ -1,6 +1,19 @@
 
 ![Original Logo Symbol](https://github.com/user-attachments/assets/75173cf4-2502-4710-998b-6b81740ae1bd)
 
+# 引用說明 
+本模組來源為 [[GitHub 原始碼連結](https://github.com/stephengpope/no-code-architects-toolkit.git)]，原作者為 Stephen G. Pope，採用 GNU General Public License v2 發佈。
+
+## 修改內容
+- 僅保存源專案中有使用到的部分，部分未使用程式碼已移除。
+- 新增docker `/NCA_video/`共通掛載檔案位置設定
+- 新增`route/v1/video/download`自製API端點
+
+
+## 授權條款
+本模組為 GPL-2.0 授權，所有改作亦遵循相同條款。詳見 `LICENSE` 檔案。
+
+
 # No-Code Architects Toolkit API 
 
 Tired of wasting thousands of dollars on API subscriptions to support all your automations? What if there was a free alternative?

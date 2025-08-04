@@ -1,4 +1,15 @@
 ## Baserow is an open-source no-code database tool and an Airtable alternative.
+# 引用說明 
+本資料夾引自 [Baserow 原始repo](https://gitlab.com/baserow/baserow)。
+
+## 修改內容
+- 僅保留部分程式碼，未使用到的部分有些已移除。
+
+
+## 授權條款
+- 主體遵守 MIT Expat License（詳見 `LICENSE`）
+
+
 
 Create your own online database without technical experience. Our user-friendly no-code
 tool gives you the powers of a developer without leaving your browser.
