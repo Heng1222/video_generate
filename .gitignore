@@ -4,6 +4,8 @@ n8n/public/.env
 /no-code-architects-toolkit/.env
 /no-code-architects-toolkit/NCA_video/
 /kling_authentication/.env
+/prompt_chinese.md
+/prompt_english.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
